@@ -125,7 +125,9 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'shop',
 )
-
+TEMPLATE_CONTEXT_PROCESSORS = (
+    'storly.context_templates.common_vars',
+    )
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.

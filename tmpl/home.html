@@ -1,0 +1,230 @@
+{% extends "base.html" %}
+{% block content %}
+{% if slide.url and slide.title %}
+    <div id="slider">
+    <a href="{{ slide.href }}" title="{{ slide.title }} {{ slide.description }}">
+        <div class="slide-out" style="background: url({{ slide.background }}) no-repeat 0 0;!important">
+            <img src="{{ slide.url }}"  alt="{{ slide.title }}" class="slide-img">
+            <div class="slide-txt">
+                <h1>{{ slide.title|upper }}</h1>
+                <h2>{{ slide.description }}</h2>
+                <div class="learn-more"><span>Узнать больше</span><span class="arrow-s-w"></span></div>
+            </div>
+        </div>
+
+    </a>
+    </div>
+{% endif %}
+<div id="like-bar">
+    <h2>{{ site_settings.wow|upper }}</h2>
+    <div class="arrow-big"></div>
+    <div class="like"><div class="gplus"><div class="g-plusone" data-size="medium"></div></div><div class="yashare"><div class="yashare-auto-init" data-yashareL10n="ru" data-yashareType="button" data-yashareQuickServices=""></div> </div></div>
+</div>
+<div id="newslatter">
+    <ul class="newslatter">
+        <form name="newslatter" action="" method="post" id="newslatter-form">
+            <li class="st">Подпишись на новости</li>
+            <li><h2>ПОЛУЧИ ПОДАРОК</h2></li>
+            <li>
+                <input size="20" maxlength="30" class="input" name="" id="" value="" onfocus="" type="text" placeholder="Ваш e-mail адрес ">
+                <input type="button" value="Отправить" title="Отправить" class="btn-ok">
+            </li>
+        </form>
+    </ul>
+</div>
+<div id="cat-list">
+    <div class="cat-box">
+        <div>
+            <a href="#" title="Ультрафиолетовые фонари">
+                <img " src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+            </a>
+        </div>
+        <h2><a href="#">Ультрафиолетовые фонари</a></h2>
+    </div>
+    <div class="cat-box">
+        <div >
+            <a href="#" title="Ультрафиолетовые фонари">
+                <img " src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+            </a>
+        </div>
+        <h2>
+            <a href="#">Зарядные устройства и аксессуары</a>
+        </h2>
+    </div>
+    <div class="cat-box">
+        <div>
+            <a href="#" title="Ультрафиолетовые фонари">
+                <img " src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+            </a>
+        </div>
+        <h2>
+            <a href="#">Ручные фонари</a>
+        </h2>
+    </div>
+</div>
+<div id="social-wrap">
+    <div id="social-widget">
+        <img " src="img/vk.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+    </div>
+    <div id="review-last">
+        <h2>ПОСЛЕДНИЕ ОТЗЫВЫ</h2>
+        <div class="review-s">
+            <div class="fl">
+                <img src="img/good-s.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+            </div>
+            <div class="review-s-cnt">
+                <h2>
+                    <a href="#" title="Ультрафиолетовые фонари">Fenix TK50 R5</a>
+                </h2>
+                <div>
+                    <span class="star-s-f"></span>
+                    <span class="star-s-h"></span>
+                    <span class="star-s-n"></span>
+                    <span  class="star-s-n"></span>
+                    <span  class="star-s-n"></span>
+                </div>
+                <a href="#" title="Ультрафиолетовые фонари"><p>Огромное спасибо за фонарь. Феникс ТК 35 просто обалденен. ночь на локе ....</p></a>
+            </div>
+        </div>
+        <div class="review-s">
+            <div class="fl">
+                <img src="img/good-s.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+            </div>
+            <div class="review-s-cnt">
+                <h2>
+                    <a href="#" title="Ультрафиолетовые фонари">Fenix TK50 R5</a>
+                </h2>
+                <div>
+                    <span class="star-s-f"></span>
+                    <span class="star-s-h"></span>
+                    <span class="star-s-n"></span>
+                    <span  class="star-s-n"></span>
+                    <span  class="star-s-n"></span>
+                </div>
+                <a href="#" title="Ультрафиолетовые фонари"><p>Огромное спасибо за фонарь. Феникс ТК 35 просто обалденен. ночь на локе ....</p></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pop-goods-wrap">
+    <h2>НАШИ КЛИЕНТЫ ЧАЩЕ ВСЕГО ВЫБИРАЮТ СЛЕДУЮЩИЕ ТОВАРЫ
+    </h2>
+    <div class="goods-box">
+        <div class="goods-out">
+            <div>
+                <a href="#" title="Ультрафиолетовые фонари">
+                    <img src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+                </a>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><h2>Fenix TK11 R5</h2></a>
+            <div>
+                <span class="star-s-f"></span >
+                <span class="star-s-h"></span >
+                <span class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="st"><a href="#" title="Ультрафиолетовые фонари">(4)</a></span >
+            </div>
+            <div>
+                <span class="price-old">4000 руб</span><span class="price">2999 руб</span>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><div class="btn-add-cart"></div></a>
+
+        </div>
+    </div>
+    <div class="goods-box">
+        <div class="goods-out">
+            <div>
+                <a href="#" title="Ультрафиолетовые фонари">
+                    <img src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+                </a>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><h2>Fenix TK11 R5</h2></a>
+            <div>
+                <span class="star-s-f"></span >
+                <span class="star-s-h"></span >
+                <span class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="st"><a href="#" title="Ультрафиолетовые фонари">(4)</a></span >
+            </div>
+            <div>
+                <span class="price-old">4000 руб</span><span class="price">2999 руб</span>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><div class="btn-add-cart"></div></a>
+
+        </div>
+    </div>
+    <div class="goods-box">
+        <div class="goods-out">
+            <div>
+                <a href="#" title="Ультрафиолетовые фонари">
+                    <img src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+                </a>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><h2>Fenix TK11 R5</h2></a>
+            <div>
+                <span class="star-s-f"></span >
+                <span class="star-s-h"></span >
+                <span class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="st"><a href="#" title="Ультрафиолетовые фонари">(4)</a></span >
+            </div>
+            <div>
+                <span class="price-old">4000 руб</span><span class="price">2999 руб</span>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><div class="btn-add-cart"></div></a>
+
+        </div>
+    </div>
+    <div class="goods-box">
+        <div class="goods-out">
+            <div>
+                <a href="#" title="Ультрафиолетовые фонари">
+                    <img src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+                </a>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><h2>Fenix TK11 R5</h2></a>
+            <div>
+                <span class="star-s-f"></span >
+                <span class="star-s-h"></span >
+                <span class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="st"><a href="#" title="Ультрафиолетовые фонари">(4)</a></span >
+            </div>
+            <div>
+                <span class="price-old">4000 руб</span><span class="price">2999 руб</span>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><div class="btn-add-cart"></div></a>
+
+        </div>
+    </div>
+    <div class="goods-box">
+        <div class="goods-out">
+            <div>
+                <a href="#" title="Ультрафиолетовые фонари">
+                    <img src="img/good-m.jpg" alt="Ультрафиолетовые фонари" title="Ультрафиолетовые фонари">
+                </a>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><h2>Fenix TK11 R5</h2></a>
+            <div>
+                <span class="star-s-f"></span >
+                <span class="star-s-h"></span >
+                <span class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="star-s-n"></span >
+                <span  class="st"><a href="#" title="Ультрафиолетовые фонари">(4)</a></span >
+            </div>
+            <div>
+                <span class="price-old">4000 руб</span><span class="price">2999 руб</span>
+            </div>
+            <a href="#" title="Ультрафиолетовые фонари"><div class="btn-add-cart"></div></a>
+
+        </div>
+    </div>
+
+
+</div>
+{% endblock %}
